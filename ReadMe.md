@@ -20,7 +20,7 @@
         Funcionalidades ✨
     </h3>
     <ul>
-        <li> Soma (➕)
+        <li> Adicao (➕)
         <li> Subtracao (➖)
         <li> Multiplicacao (✖️)
         <li> Divisao (➗)
