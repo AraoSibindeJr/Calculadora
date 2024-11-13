@@ -22,6 +22,19 @@ public class Main {
                 int ad_resp= ad1 + ad2;
                 System.out.println(" ==> Resultado da operacao: ");
                 System.out.println(" ==> "+ ad1 + " + " + ad2 + " = " + ad_resp);
+                break;
+            case 2:
+                System.out.println(" ==> Subtracao <== ");
+                System.out.println(" ==> Insira um numero: ");
+                int sub1 = sc.nextInt();
+                System.out.println(" ==> Insira outro numero: ");
+                int sub2 = sc.nextInt();
+                System.out.println(" ==> Efectuar operacao: ");
+                System.out.println(" ==> "+ sub1 + " - " + sub2 + " = ");
+                int sub_resp = sub1 - sub2;
+                System.out.println(" ==> Resultado da operacao: ");
+                System.out.println(" ==> "+ sub1+ " - "+ sub2 + " = "+ sub_resp);
+                break;
         }
 
     }
