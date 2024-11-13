@@ -35,6 +35,23 @@ public class Main {
                 System.out.println(" ==> Resultado da operacao: ");
                 System.out.println(" ==> "+ sub1+ " - "+ sub2 + " = "+ sub_resp);
                 break;
+            case 3:
+                System.out.println(" ==> Divisao <== ");
+                System.out.println(" ==> Insira um numero: ");
+                double div1 = sc.nextInt();
+                System.out.println(" ==> Insira outro numero: ");
+                double div2 = sc.nextInt();
+                if(div1 == 0){
+                    System.out.println(" Math.error");
+                    System.out.println(" Numero deve ser diferente de zero ");
+                    System.exit(0);
+                }
+                double div_resp = div1 / div2;
+                System.out.println(" ==> Efectuar operacao: ");
+                System.out.println(" ==> "+ div1 + " / " + div2 + " = ");
+                System.out.println(" ==> Resultado da operacao: ");
+                System.out.println(" ==> "+ div1 + " / " + div2 + " = " + div_resp);
+
         }
 
     }
