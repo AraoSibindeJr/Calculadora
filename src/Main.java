@@ -63,7 +63,27 @@ public class Main {
                 System.out.println(" ==> "+ mul1 + " x " + mul2 + " = ");
                 System.out.println(" ==> Resultado da operacao: ");
                 System.out.println(" ==> "+ mul1 + " / " + mul2 + " = " + mul_resp);
-                break; 
+                break;
+            case 5:
+                double pot = 1;
+                System.out.println(" ==> Potenciacao <== ");
+                System.out.println(" ==> Insira valor da base: ");
+                int base = sc.nextInt();
+                System.out.println(" ==> Insira valor do espoente: ");
+                int exp = sc.nextInt();
+                if(exp < 0){
+                    System.out.println(" O expoente deve ser positivo");
+                    System.exit(0);
+                }else {
+                    for(int i = 0; i < exp; i++){
+                        pot *= base;
+                    }
+                    System.out.println(" ==> Efectuar operacao: ");
+                    System.out.println(" ==> "+ base+"^"+exp + " = ");
+                    System.out.println(" ==> Resultado da operacao: ");
+                    System.out.println(" ==> "+ base+"^"+exp + " = "+ pot);
+                }
+
         }
 
     }
