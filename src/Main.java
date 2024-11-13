@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
-        int resp ;
+        int resp, totA =0, totS=0,totD=0,totM=0,totP=0;
         do{
             System.out.println(" ==> Maquina Calculadora <== ");
             System.out.println(" ==> Escolha uma operacao: ");
@@ -24,6 +24,7 @@ public class Main {
                     int ad_resp= ad1 + ad2;
                     System.out.println(" ==> Resultado da operacao: ");
                     System.out.println(" ==> "+ ad1 + " + " + ad2 + " = " + ad_resp);
+                    totA++;
                     break;
                 case 2:
                     System.out.println(" ==> Subtracao <== ");
@@ -36,6 +37,7 @@ public class Main {
                     int sub_resp = sub1 - sub2;
                     System.out.println(" ==> Resultado da operacao: ");
                     System.out.println(" ==> "+ sub1+ " - "+ sub2 + " = "+ sub_resp);
+                    totS++;
                     break;
                 case 3:
                     System.out.println(" ==> Divisao <== ");
@@ -53,6 +55,7 @@ public class Main {
                     System.out.println(" ==> "+ div1 + " / " + div2 + " = ");
                     System.out.println(" ==> Resultado da operacao: ");
                     System.out.println(" ==> "+ div1 + " / " + div2 + " = " + div_resp);
+                    totD++;
                     break;
                 case 4:
                     System.out.println(" ==> Multiplicacao <== ");
@@ -65,6 +68,7 @@ public class Main {
                     System.out.println(" ==> "+ mul1 + " x " + mul2 + " = ");
                     System.out.println(" ==> Resultado da operacao: ");
                     System.out.println(" ==> "+ mul1 + " / " + mul2 + " = " + mul_resp);
+                    totM++;
                     break;
                 case 5:
                     double pot = 1;
@@ -85,6 +89,7 @@ public class Main {
                         System.out.println(" ==> Resultado da operacao: ");
                         System.out.println(" ==> "+ base+"^"+exp + " = "+ pot);
                     }
+                    totP++;
                     break;
                 default:
                     System.out.println(" ERROR");
@@ -97,5 +102,18 @@ public class Main {
             System.out.println(" [2] NAO");
             resp = sc.nextInt();
         }while (resp ==1 );
+        int TOTAL = totA + totD + totM + totP + totS;
+        System.out.println(" ============ ");
+        System.out.println(" ==>  Estatisticas de utilizacao <== ");
+        System.out.println(" ==> Total de vezes usada para somar: "+ totA);
+        System.out.println(" ==> Total de vezes usada para subtrair: "+ totS);
+        System.out.println(" ==> Total de vezes usada para Dividir: "+ totD);
+        System.out.println(" ==> Total de vezes usada para Multiplicar: "+ totM);
+        System.out.println(" ==> Total de vezes usada para Potencializar: "+ totP);
+        System.out.println(" ==> Total de Vezes usada: "+ TOTAL);
+        System.out.println();
+        System.out.println();
+        System.out.println(" =====> FIM <===== ");
+        System.out.println(" ==> Araozinx Dev <== ");
     }
 }
