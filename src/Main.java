@@ -51,7 +51,19 @@ public class Main {
                 System.out.println(" ==> "+ div1 + " / " + div2 + " = ");
                 System.out.println(" ==> Resultado da operacao: ");
                 System.out.println(" ==> "+ div1 + " / " + div2 + " = " + div_resp);
-
+                break;
+            case 4:
+                System.out.println(" ==> Multiplicacao <== ");
+                System.out.println(" ==> Insira um numero: ");
+                double mul1 = sc.nextInt();
+                System.out.println(" ==> Insira outro numero: ");
+                double mul2 = sc.nextInt();
+                double mul_resp = mul1 * mul2;
+                System.out.println(" ==> Efectuar operacao: ");
+                System.out.println(" ==> "+ mul1 + " x " + mul2 + " = ");
+                System.out.println(" ==> Resultado da operacao: ");
+                System.out.println(" ==> "+ mul1 + " / " + mul2 + " = " + mul_resp);
+                break; 
         }
 
     }
