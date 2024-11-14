@@ -19,8 +19,6 @@ public class Main {
                     int ad1 = sc.nextInt();
                     System.out.println(" ==> Insira outro numero: ");
                     int ad2 = sc.nextInt();
-                    System.out.println(" Efectuar operacao: ");
-                    System.out.println(" ==> "+ ad1 + " + " + ad2 + " = ");
                     int ad_resp= ad1 + ad2;
                     System.out.println(" ==> Resultado da operacao: ");
                     System.out.println(" ==> "+ ad1 + " + " + ad2 + " = " + ad_resp);
@@ -32,8 +30,6 @@ public class Main {
                     int sub1 = sc.nextInt();
                     System.out.println(" ==> Insira outro numero: ");
                     int sub2 = sc.nextInt();
-                    System.out.println(" ==> Efectuar operacao: ");
-                    System.out.println(" ==> "+ sub1 + " - " + sub2 + " = ");
                     int sub_resp = sub1 - sub2;
                     System.out.println(" ==> Resultado da operacao: ");
                     System.out.println(" ==> "+ sub1+ " - "+ sub2 + " = "+ sub_resp);
@@ -51,8 +47,6 @@ public class Main {
                         System.exit(0);
                     }
                     double div_resp = div1 / div2;
-                    System.out.println(" ==> Efectuar operacao: ");
-                    System.out.println(" ==> "+ div1 + " / " + div2 + " = ");
                     System.out.println(" ==> Resultado da operacao: ");
                     System.out.println(" ==> "+ div1 + " / " + div2 + " = " + div_resp);
                     totD++;
@@ -64,8 +58,6 @@ public class Main {
                     System.out.println(" ==> Insira outro numero: ");
                     double mul2 = sc.nextInt();
                     double mul_resp = mul1 * mul2;
-                    System.out.println(" ==> Efectuar operacao: ");
-                    System.out.println(" ==> "+ mul1 + " x " + mul2 + " = ");
                     System.out.println(" ==> Resultado da operacao: ");
                     System.out.println(" ==> "+ mul1 + " / " + mul2 + " = " + mul_resp);
                     totM++;
@@ -84,8 +76,6 @@ public class Main {
                         for(int i = 0; i < exp; i++){
                             pot *= base;
                         }
-                        System.out.println(" ==> Efectuar operacao: ");
-                        System.out.println(" ==> "+ base+"^"+exp + " = ");
                         System.out.println(" ==> Resultado da operacao: ");
                         System.out.println(" ==> "+ base+"^"+exp + " = "+ pot);
                     }
@@ -111,7 +101,6 @@ public class Main {
         System.out.println(" ==> Total de vezes usada para Multiplicar: "+ totM);
         System.out.println(" ==> Total de vezes usada para Potencializar: "+ totP);
         System.out.println(" ==> Total de Vezes usada: "+ TOTAL);
-        System.out.println();
         System.out.println();
         System.out.println(" =====> FIM <===== ");
         System.out.println(" ==> Araozinx Dev <== ");
