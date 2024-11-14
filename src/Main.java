@@ -101,6 +101,15 @@ public class Main {
         System.out.println(" ==> Total de vezes usada para Multiplicar: "+ totM);
         System.out.println(" ==> Total de vezes usada para Potencializar: "+ totP);
         System.out.println(" ==> Total de Vezes usada: "+ TOTAL);
+        if(TOTAL <= 1){
+            System.out.println(" ==> Uso: Baixo");
+        } else if (TOTAL <= 3) {
+            System.out.println(" ==> Uso: Moderado");
+        } else if (TOTAL <= 5) {
+            System.out.println(" ==> Uso: Alto");
+        }else {
+            System.out.println(" ==> Uso: Extremo");
+        }
         System.out.println();
         System.out.println(" =====> FIM <===== ");
         System.out.println(" ==> Araozinx Dev <== ");
