@@ -3,6 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         int resp, totA =0, totS=0,totD=0,totM=0,totP=0;
+        int respA, respS, respD, respM, respP,resp_padrao=0;
         do{
             System.out.println(" ==> Maquina Calculadora <== ");
             System.out.println(" ==> Escolha uma operacao: ");
@@ -14,15 +15,21 @@ public class Main {
             int escolha = sc.nextInt();
             switch(escolha){
                 case 1:
-                    System.out.println(" ==> Adicao <== ");
-                    System.out.println(" ==> Insira um numero: ");
-                    int ad1 = sc.nextInt();
-                    System.out.println(" ==> Insira outro numero: ");
-                    int ad2 = sc.nextInt();
-                    int ad_resp= ad1 + ad2;
-                    System.out.println(" ==> Resultado da operacao: ");
-                    System.out.println(" ==> "+ ad1 + " + " + ad2 + " = " + ad_resp);
-                    totA++;
+                    do{
+                        System.out.println(" ==> Adicao <== ");
+                        System.out.println(" ==> Insira um numero: ");
+                        int ad1 = sc.nextInt();
+                        System.out.println(" ==> Insira outro numero: ");
+                        int ad2 = sc.nextInt();
+                        int ad_resp= ad1 + ad2;
+                        System.out.println(" ==> Resultado da operacao: ");
+                        System.out.println(" ==> "+ ad1 + " + " + ad2 + " = " + ad_resp);
+                        totA++;
+                        System.out.println(" =============== ");
+                        System.out.println(" ==> [1] Continuar na Funcao: Adicionar  ");
+                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        respA = sc.nextInt();
+                    }while(respA == 1);
                     break;
                 case 2:
                     System.out.println(" ==> Subtracao <== ");
@@ -88,8 +95,8 @@ public class Main {
             }
             System.out.println(" ========== ");
             System.out.println(" ==> Deseja efectuar mais operacoes? ");
-            System.out.println(" [1] SIM");
-            System.out.println(" [2] NAO");
+            System.out.println(" [1] Menu Principal");
+            System.out.println(" [2] Sair do Programa");
             resp = sc.nextInt();
         }while (resp ==1 );
         int TOTAL = totA + totD + totM + totP + totS;
