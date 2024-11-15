@@ -79,7 +79,7 @@ public class Main {
                         double mul2 = sc.nextInt();
                         double mul_resp = mul1 * mul2;
                         System.out.println(" ==> Resultado da operacao: ");
-                        System.out.println(" ==> "+ mul1 + " / " + mul2 + " = " + mul_resp);
+                        System.out.println(" ==> "+ mul1 + " x " + mul2 + " = " + mul_resp);
                         totM++;
                         System.out.println(" =============== ");
                         System.out.println(" ==> [1] Continuar na Funcao: Multiplicacao ");
