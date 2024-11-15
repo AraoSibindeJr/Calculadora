@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         int resp, totA =0, totS=0,totD=0,totM=0,totP=0;
-        int respA, respS, respD, respM, respP,resp_padrao=0;
+        int respA, respS, respD, respM, respP;
         do{
             System.out.println(" ==> Maquina Calculadora <== ");
             System.out.println(" ==> Escolha uma operacao: ");
@@ -49,50 +49,68 @@ public class Main {
                     }while(respS == 1);
                     break;
                 case 3:
-                    System.out.println(" ==> Divisao <== ");
-                    System.out.println(" ==> Insira um numero: ");
-                    double div1 = sc.nextInt();
-                    System.out.println(" ==> Insira outro numero: ");
-                    double div2 = sc.nextInt();
-                    if(div1 == 0){
-                        System.out.println(" Math.error");
-                        System.out.println(" Numero deve ser diferente de zero ");
-                        System.exit(0);
-                    }
-                    double div_resp = div1 / div2;
-                    System.out.println(" ==> Resultado da operacao: ");
-                    System.out.println(" ==> "+ div1 + " / " + div2 + " = " + div_resp);
-                    totD++;
+                    do{
+                        System.out.println(" ==> Divisao <== ");
+                        System.out.println(" ==> Insira um numero: ");
+                        double div1 = sc.nextInt();
+                        System.out.println(" ==> Insira outro numero: ");
+                        double div2 = sc.nextInt();
+                        if(div1 == 0){
+                            System.out.println(" Math.error");
+                            System.out.println(" Numero deve ser diferente de zero ");
+                            System.exit(0);
+                        }
+                        double div_resp = div1 / div2;
+                        System.out.println(" ==> Resultado da operacao: ");
+                        System.out.println(" ==> "+ div1 + " / " + div2 + " = " + div_resp);
+                        totD++;
+                        System.out.println(" =============== ");
+                        System.out.println(" ==> [1] Continuar na Funcao: Divisao ");
+                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        respD = sc.nextInt();
+                    }while(respD == 1);
                     break;
                 case 4:
-                    System.out.println(" ==> Multiplicacao <== ");
-                    System.out.println(" ==> Insira um numero: ");
-                    double mul1 = sc.nextInt();
-                    System.out.println(" ==> Insira outro numero: ");
-                    double mul2 = sc.nextInt();
-                    double mul_resp = mul1 * mul2;
-                    System.out.println(" ==> Resultado da operacao: ");
-                    System.out.println(" ==> "+ mul1 + " / " + mul2 + " = " + mul_resp);
-                    totM++;
+                    do{
+                        System.out.println(" ==> Multiplicacao <== ");
+                        System.out.println(" ==> Insira um numero: ");
+                        double mul1 = sc.nextInt();
+                        System.out.println(" ==> Insira outro numero: ");
+                        double mul2 = sc.nextInt();
+                        double mul_resp = mul1 * mul2;
+                        System.out.println(" ==> Resultado da operacao: ");
+                        System.out.println(" ==> "+ mul1 + " / " + mul2 + " = " + mul_resp);
+                        totM++;
+                        System.out.println(" =============== ");
+                        System.out.println(" ==> [1] Continuar na Funcao: Multiplicacao ");
+                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        respM = sc.nextInt();
+                    }while(respM == 1);
                     break;
                 case 5:
-                    double pot = 1;
-                    System.out.println(" ==> Potenciacao <== ");
-                    System.out.println(" ==> Insira valor da base: ");
-                    int base = sc.nextInt();
-                    System.out.println(" ==> Insira valor do espoente: ");
-                    int exp = sc.nextInt();
-                    if(exp < 0){
-                        System.out.println(" O expoente deve ser positivo");
-                        System.exit(0);
-                    }else {
-                        for(int i = 0; i < exp; i++){
-                            pot *= base;
+                    do{
+                        double pot = 1;
+                        System.out.println(" ==> Potenciacao <== ");
+                        System.out.println(" ==> Insira valor da base: ");
+                        int base = sc.nextInt();
+                        System.out.println(" ==> Insira valor do espoente: ");
+                        int exp = sc.nextInt();
+                        if(exp < 0){
+                            System.out.println(" O expoente deve ser positivo");
+                            System.exit(0);
+                        }else {
+                            for(int i = 0; i < exp; i++){
+                                pot *= base;
+                            }
+                            System.out.println(" ==> Resultado da operacao: ");
+                            System.out.println(" ==> "+ base+"^"+exp + " = "+ pot);
                         }
-                        System.out.println(" ==> Resultado da operacao: ");
-                        System.out.println(" ==> "+ base+"^"+exp + " = "+ pot);
-                    }
-                    totP++;
+                        totP++;
+                        System.out.println(" =============== ");
+                        System.out.println(" ==> [1] Continuar na Funcao: Potenciacao ");
+                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        respP = sc.nextInt();
+                    }while(respP == 1);
                     break;
                 default:
                     System.out.println(" ERROR");
