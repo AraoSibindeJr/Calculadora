@@ -32,15 +32,21 @@ public class Main {
                     }while(respA == 1);
                     break;
                 case 2:
-                    System.out.println(" ==> Subtracao <== ");
-                    System.out.println(" ==> Insira um numero: ");
-                    int sub1 = sc.nextInt();
-                    System.out.println(" ==> Insira outro numero: ");
-                    int sub2 = sc.nextInt();
-                    int sub_resp = sub1 - sub2;
-                    System.out.println(" ==> Resultado da operacao: ");
-                    System.out.println(" ==> "+ sub1+ " - "+ sub2 + " = "+ sub_resp);
-                    totS++;
+                    do{
+                        System.out.println(" ==> Subtracao <== ");
+                        System.out.println(" ==> Insira um numero: ");
+                        int sub1 = sc.nextInt();
+                        System.out.println(" ==> Insira outro numero: ");
+                        int sub2 = sc.nextInt();
+                        int sub_resp = sub1 - sub2;
+                        System.out.println(" ==> Resultado da operacao: ");
+                        System.out.println(" ==> "+ sub1+ " - "+ sub2 + " = "+ sub_resp);
+                        totS++;
+                        System.out.println(" =============== ");
+                        System.out.println(" ==> [1] Continuar na Funcao: Subtracao  ");
+                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        respS = sc.nextInt();
+                    }while(respS == 1);
                     break;
                 case 3:
                     System.out.println(" ==> Divisao <== ");
