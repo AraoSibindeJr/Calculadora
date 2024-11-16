@@ -26,8 +26,8 @@ public class Main {
                         System.out.println(" ==> "+ ad1 + " + " + ad2 + " = " + ad_resp);
                         totA++;
                         System.out.println(" ><========================>< ");
-                        System.out.println(" ==> [1] Continuar na Funcao: Adicionar  ");
-                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        System.out.println(" ==> [1] Continuar na Adicao  ");
+                        System.out.println(" ==> [2] Menu principal ");
                         respA = sc.nextInt();
                     }while(respA == 1);
                     break;
@@ -43,8 +43,8 @@ public class Main {
                         System.out.println(" ==> "+ sub1+ " - "+ sub2 + " = "+ sub_resp);
                         totS++;
                         System.out.println(" ><========================>< ");
-                        System.out.println(" ==> [1] Continuar na Funcao: Subtracao  ");
-                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        System.out.println(" ==> [1] Continuar na Subtracao  ");
+                        System.out.println(" ==> [2] Menu principal ");
                         respS = sc.nextInt();
                     }while(respS == 1);
                     break;
@@ -65,8 +65,8 @@ public class Main {
                         System.out.println(" ==> "+ div1 + " / " + div2 + " = " + div_resp);
                         totD++;
                         System.out.println(" ><========================>< ");
-                        System.out.println(" ==> [1] Continuar na Funcao: Divisao ");
-                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        System.out.println(" ==> [1] Continuar na Divisao ");
+                        System.out.println(" ==> [2] Menu principal ");
                         respD = sc.nextInt();
                     }while(respD == 1);
                     break;
@@ -82,8 +82,8 @@ public class Main {
                         System.out.println(" ==> "+ mul1 + " x " + mul2 + " = " + mul_resp);
                         totM++;
                         System.out.println(" ><========================>< ");
-                        System.out.println(" ==> [1] Continuar na Funcao: Multiplicacao ");
-                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        System.out.println(" ==> [1] Continuar na Multiplicacao ");
+                        System.out.println(" ==> [2] Menu principal ");
                         respM = sc.nextInt();
                     }while(respM == 1);
                     break;
@@ -107,8 +107,8 @@ public class Main {
                         }
                         totP++;
                         System.out.println(" ><========================>< ");
-                        System.out.println(" ==> [1] Continuar na Funcao: Potenciacao ");
-                        System.out.println(" ==> [2] Voltar para o Menu principal ");
+                        System.out.println(" ==> [1] Continuar na Potenciacao ");
+                        System.out.println(" ==> [2] Menu principal ");
                         respP = sc.nextInt();
                     }while(respP == 1);
                     break;
