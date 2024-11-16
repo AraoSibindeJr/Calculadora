@@ -25,7 +25,7 @@ public class Main {
                         System.out.println(" ==> Resultado da operacao: ");
                         System.out.println(" ==> "+ ad1 + " + " + ad2 + " = " + ad_resp);
                         totA++;
-                        System.out.println(" =============== ");
+                        System.out.println(" ><========================>< ");
                         System.out.println(" ==> [1] Continuar na Funcao: Adicionar  ");
                         System.out.println(" ==> [2] Voltar para o Menu principal ");
                         respA = sc.nextInt();
@@ -42,7 +42,7 @@ public class Main {
                         System.out.println(" ==> Resultado da operacao: ");
                         System.out.println(" ==> "+ sub1+ " - "+ sub2 + " = "+ sub_resp);
                         totS++;
-                        System.out.println(" =============== ");
+                        System.out.println(" ><========================>< ");
                         System.out.println(" ==> [1] Continuar na Funcao: Subtracao  ");
                         System.out.println(" ==> [2] Voltar para o Menu principal ");
                         respS = sc.nextInt();
@@ -64,7 +64,7 @@ public class Main {
                         System.out.println(" ==> Resultado da operacao: ");
                         System.out.println(" ==> "+ div1 + " / " + div2 + " = " + div_resp);
                         totD++;
-                        System.out.println(" =============== ");
+                        System.out.println(" ><========================>< ");
                         System.out.println(" ==> [1] Continuar na Funcao: Divisao ");
                         System.out.println(" ==> [2] Voltar para o Menu principal ");
                         respD = sc.nextInt();
@@ -81,7 +81,7 @@ public class Main {
                         System.out.println(" ==> Resultado da operacao: ");
                         System.out.println(" ==> "+ mul1 + " x " + mul2 + " = " + mul_resp);
                         totM++;
-                        System.out.println(" =============== ");
+                        System.out.println(" ><========================>< ");
                         System.out.println(" ==> [1] Continuar na Funcao: Multiplicacao ");
                         System.out.println(" ==> [2] Voltar para o Menu principal ");
                         respM = sc.nextInt();
@@ -106,7 +106,7 @@ public class Main {
                             System.out.println(" ==> "+ base+"^"+exp + " = "+ pot);
                         }
                         totP++;
-                        System.out.println(" =============== ");
+                        System.out.println(" ><========================>< ");
                         System.out.println(" ==> [1] Continuar na Funcao: Potenciacao ");
                         System.out.println(" ==> [2] Voltar para o Menu principal ");
                         respP = sc.nextInt();
@@ -117,7 +117,7 @@ public class Main {
                     System.out.println(" Escolha um numero entre [1] ate [5]");
                     System.exit(0);
             }
-            System.out.println(" ========== ");
+            System.out.println(" ><========================>< ");
             System.out.println(" ==> Deseja efectuar mais operacoes? ");
             System.out.println(" [1] Menu Principal");
             System.out.println(" [2] Sair do Programa");
