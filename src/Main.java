@@ -118,7 +118,7 @@ public class Main {
                     System.exit(0);
             }
             System.out.println(" ><========================>< ");
-            System.out.println(" ==> Deseja efectuar mais operacoes? ");
+            System.out.println(" ==> Escolha uma opcao:  ");
             System.out.println(" [1] Menu Principal");
             System.out.println(" [2] Sair do Programa");
             resp = sc.nextInt();
