@@ -126,12 +126,12 @@ public class Main {
         int TOTAL = totA + totD + totM + totP + totS;
         System.out.println(" ============ ");
         System.out.println(" ==>  Estatisticas de utilizacao <== ");
-        System.out.println(" ==> Total de vezes usada para somar: "+ totA);
-        System.out.println(" ==> Total de vezes usada para subtrair: "+ totS);
-        System.out.println(" ==> Total de vezes usada para Dividir: "+ totD);
-        System.out.println(" ==> Total de vezes usada para Multiplicar: "+ totM);
-        System.out.println(" ==> Total de vezes usada para Potencializar: "+ totP);
-        System.out.println(" ==> Total de Vezes usada: "+ TOTAL);
+        System.out.println(" ==> Total de vezes usada para somar: ["+ totA+"]");
+        System.out.println(" ==> Total de vezes usada para subtrair: ["+ totS+"]");
+        System.out.println(" ==> Total de vezes usada para Dividir: ["+ totD+"]");
+        System.out.println(" ==> Total de vezes usada para Multiplicar: ["+ totM+"]");
+        System.out.println(" ==> Total de vezes usada para Potencializar: ["+ totP+"]");
+        System.out.println(" ==> Total de Vezes usada: ["+ TOTAL+"]");
         if(TOTAL <= 1){
             System.out.println(" ==> Uso: Baixo");
         } else if (TOTAL <= 3) {
